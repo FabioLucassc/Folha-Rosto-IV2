@@ -1,0 +1,464 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #111111;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 12pt;
+	font-weight: 200;
+	color: #FFF;
+}
+
+nav {
+	height: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-shadow: 1px 1px 1px #000000;
+	font-family: 'Work Sans', sans-serif;
+	padding: 10px;
+	font-size: 22px;
+}
+
+@font-face {
+	font-family: Qanelas;
+	src: url(../fonts/QanelasSoftDEMO-UltraLight.otf)
+}
+
+.container {
+	margin: 0em auto;
+	width: 100%;
+}
+
+/*********************************************************************************/
+
+/* Header                                                                        */
+
+/*********************************************************************************/
+
+#menuSuperior {
+	position: relative;
+	padding: 5em 0em 7em 0em;
+	background: #111111 url(/images/header-bg.jpg) no-repeat center;
+	background-size: cover;
+	min-width: 600px;
+	width: auto;
+}
+
+#header {
+	position: relative;
+	padding: 5em 0em;
+	text-align: center;
+}
+
+/*********************************************************************************/
+
+/* Nome                                                                          */
+
+/*********************************************************************************/
+
+#nome {
+	position: static;
+	top: 8em;
+	text-align: center;
+	font-family: 'Work Sans', sans-serif;
+	text-shadow: 2px 2px 2px #000000
+}
+
+#nome h1 {
+	font-size: 3.5em;
+	color: white;
+	text-align: center;
+}
+
+/*********************************************************************************/
+
+/* Menu                                                                          */
+
+/*********************************************************************************/
+
+#logoMenu {
+	width: 2em;
+	align-items: center;
+}
+
+.itens-menu {
+	width: auto;
+	margin-left: 0.3em;
+	color: white;
+}
+
+.itens-menu:hover {
+	color: #afb5bb;
+}
+
+#menu {
+	position: static;
+	top: 2em;
+	z-index: 1000;
+}
+
+#menu ul {
+	/* display: inline-block; */
+	position: fixed;
+	right: 5%;
+	top: 6%;
+}
+
+#menu li {
+	display: block;
+	float: right;
+	text-align: center;
+}
+
+#menu li a, #menu li span {
+	padding: 1em 1.5em;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	color: rgba(255, 255, 255, 0.80);
+	z-index: 1000;
+}
+
+#menuEsquerdo ul {
+	display: flex;
+	align-items: center;
+	/* position: fixed; */
+	z-index: 1000;
+	top: 2em;
+}
+
+#menuEsquerdo .itens-menu {
+	margin: 8%;
+	font-family: Qanelas;
+	text-align: center;
+}
+
+#menu .active a {
+	border: 3px solid rgb(189, 189, 189);
+	border-radius: 6px;
+	color: white;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+#menu .active a:hover {
+	border: 3px solid rgb(0, 0, 0);
+	border-radius: 6px;
+	color: rgb(14, 14, 14);
+	text-shadow: 1px 1px 1px #f7f7f7;
+	box-shadow: 0 4px 4px -2px #f00e0e;
+}
+
+/*********************************************************************************/
+
+/* Banner                                                                        */
+
+/*********************************************************************************/
+
+.foto-Perfil {
+	margin: auto;
+	/* width: 15%; */
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 5px inset #0e1121;
+}
+
+#banner {
+	/* padding-top: 10em; */
+	text-align: center;
+}
+
+#banner .title h2 {
+	font-size: 4em;
+}
+
+#banner .title .byline {
+	font-size: 2em;
+}
+
+#banner .button {
+	margin-top: 2em;
+	padding: 1.40em 3em;
+	border: 2px solid rgba(255, 255, 255, 1);
+	border-radius: 6px;
+	font-weight: 700;
+	font-size: 1em;
+}
+
+#banner i {
+	font-size: 2em;
+	padding: 0;
+}
+
+#csharp {
+	font-size: 2em;
+	padding: 0;
+	color: #a232e2;
+}
+
+/*********************************************************************************/
+
+/* Abaixo do do Nome                                                                        */
+
+/*********************************************************************************/
+
+.title {
+	margin-bottom: 3em;
+}
+
+.title h2 {
+	font-size: 2.7em;
+}
+
+.title .byline {
+	font-size: 1.3em;
+	color: rgba(255, 255, 255, 0.60);
+}
+
+.title p {
+	font-size: 1.3em;
+	text-align: justify;
+	margin: 2% 8% 2% 8%;
+}
+
+/*********************************************************************************/
+
+/* Estilo Botão LI                                                              */
+
+/*********************************************************************************/
+
+.botoes {
+	display: inline-block;
+	padding: 1em 2em 1em 2em;
+	letter-spacing: 0.10em;
+	margin-top: 2em;
+	padding: 1.40em 3em;
+	border: 2px solid rgba(255, 255, 255, 1);
+	border-radius: 6px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1em;
+	color: #FFF;
+}
+
+.botoesMeio {
+	padding: 1em 2em;
+	border-color: rgba(0, 0, 0, .8);
+	color: rgba(0, 0, 0, .8);
+}
+
+#botoesIni li {
+	display: inline;
+	margin: 20px;
+}
+
+/*********************************************************************************/
+
+/* DIV Secundaria                                                            */
+
+/*********************************************************************************/
+
+#secundario {
+	position: relative;
+	right: 0;
+	left: 0;
+	min-width: 600px;
+	width: auto;
+	padding: 5em 0em 7em 0em;
+	/* background: #FFF; */
+	background: #ffffff;
+	align-items: center;
+}
+
+/*********************************************************************************/
+
+/* Colunas Meio                                                                  */
+
+/*********************************************************************************/
+
+#colunasMeio {
+	text-align: center;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#colunasMeio .fa {
+	display: block;
+	padding: 1em 0em;
+	color: rgba(0, 0, 0, 1);
+	font-size: 2em;
+}
+
+#colunasMeio .title h2 {
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+#colunasMeio .title .byline {
+	text-align: center;
+	color: rgba(0, 0, 0, .5);
+}
+
+/*********************************************************************************/
+
+/* Final                                                                         */
+
+/*********************************************************************************/
+
+#final {
+	position: relative;
+	padding: 7em 0em 7em 0em;
+	background: #0e1121 no-repeat center;
+	background-size: cover;
+	text-align: center;
+	min-width: 600px;
+	width: auto;
+}
+
+#final .container {
+	width: auto;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+#final a {
+	color: rgba(255, 255, 255, 1);
+}
+
+/*********************************************************************************/
+
+/* Ciruclo de Progresso                                                          */
+
+/*********************************************************************************/
+
+#circuloDeProgresso .porcentagem {
+	position: relative;
+	align-items: center;
+}
+
+#circuloDeProgresso .porcentagem strong {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	transform: translate(-50%);
+	font-size: 40px;
+	color: #ffffff;
+	font-weight: 100;
+}
+
+#circuloDeProgresso span {
+	display: block;
+	color: rgb(255, 255, 255);
+	font-size: 17px;
+	margin-top: 10px;
+}
+
+#circuloDeProgresso span i {
+	color: #ff5c5c;
+	font-size: 22px;
+	margin-right: 7px;
+}
+
+#circuloDeProgresso ul {
+	width: auto;
+	list-style: none;
+	display: inline-block;
+	justify-content: center;
+}
+
+#circuloDeProgresso li {
+	float: left;
+	margin-left: 5em;
+	padding: 0 0 0 1px;
+	margin-top: 5em;
+}
+
+/*********************************************************************************/
+
+/* Menu Contato                                                                  */
+
+/*********************************************************************************/
+
+.dropbtn {
+	background-color: #3498DB;
+	color: white;
+	padding: 6px;
+	font-size: 1.5em;
+	border: none;
+	width: auto;
+}
+
+.dropbtn p {
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 15px;
+}
+
+.dropup {
+	position: fixed;
+	bottom: 3%;
+	right: 2%;
+	display: inline-block;
+}
+
+.dropup-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	bottom: 70px;
+	z-index: 1;
+}
+
+.dropup-content a {
+	color: black;
+	font-size: 1.5em;
+	padding: 12px 19px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropup-content a:hover {
+	background-color: #ccc
+}
+
+.dropup:hover .dropup-content {
+	display: block;
+}
+
+.dropup:hover .dropbtn {
+	background-color: #2980B9;
+}

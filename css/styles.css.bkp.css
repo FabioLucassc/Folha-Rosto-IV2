@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    /* line-height: 1; */
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    background: #fff;
+    /*z-index: 1000;*/
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background: #010409;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+
+    
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgb(77, 77, 77) 0px 1px 1px;
+    background-color: #161b22;
+    font-family: 'Work Sans', sans-serif;
+    /* padding: 10px; */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+		position: relative;
+		padding: 5em 0em 7em 0em;
+		background: #111111 url(images/header-bg.jpg) no-repeat center;
+        background-size: cover;
+        z-index: 1000;
+	}
+
+	#header
+	{
+		position: relative;
+		padding: 5em 0em;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		position: absolute;
+		top: 3.6em;
+		left: 0;
+	}
+	
+	#logo h1
+	{
+		font-size: 2.6em;
+		color: #79C255;
+	}
+	
+	#logo a
+	{
+		text-decoration: none;
+		color: rgba(255,255,255,1);
+	}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu
+	{
+
+		position: static;
+		top: 4.5em;
+		right:4.5em;
+		margin-right: 3%;
+	
+	}
+	
+	#menu ul
+	{
+		display: inline-block;
+		right: 10px;
+	}
+	
+	#menu li
+	{
+		display: block;
+		float: right;
+		text-align: center;
+	}
+	
+	#menu li a, #menu li span
+	{
+		/* padding: 1em 1.5em; */
+		padding: 1em 1.5em;
+		letter-spacing: 3px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		color: rgba(255,255,255,0.80);
+	}
+	
+	#menu li:hover a, #menu li.active a, #menu li.active span
+	{
+	}
+	
+	#menu .active a
+	{
+		border: 2px solid rgba(255,255,255,1);
+		border-radius: 6px;
+		color: rgba(255,255,255,1);
+	}
+	
+	#menu .icon
+	{
+	}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		padding-top: 10em;
+		text-align: center;
+	}
+	
+	#banner .title h2
+	{
+		font-size: 4em;
+	}
+	
+	#banner .title .byline
+	{
+		font-size: 2em;
+	}
+	
+	#banner .button
+	{
+		margin-top: 2em;
+		padding: 1.40em 3em;
+		border: 2px solid rgba(255,255,255,1);
+		border-radius: 6px;
+		font-weight: 700;
+		font-size: 1em;
+		
+	}
+
+
+#logo2 {
+    width: 40px;
+    align-items: center;
+}
+#imgIni{
+
+    style:left;
+}
+
+.itens-menu {
+    width: auto;
+    margin-left: 30px;
+    color: white;
+}
+
+.itens-menu:hover {
+    color: #afb5bb;
+}
+
