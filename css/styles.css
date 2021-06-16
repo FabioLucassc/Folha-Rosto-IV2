@@ -226,12 +226,6 @@ nav {
 	padding: 0;
 }
 
-#csharp {
-	font-size: 2em;
-	padding: 0;
-	color: #a232e2;
-}
-
 /*********************************************************************************/
 
 /* Abaixo do do Nome                                                                        */
@@ -283,57 +277,6 @@ nav {
 	color: rgba(0, 0, 0, .8);
 }
 
-#botoesIni li {
-	display: inline;
-	margin: 20px;
-}
-
-/*********************************************************************************/
-
-/* DIV Secundaria                                                            */
-
-/*********************************************************************************/
-
-#secundario {
-	position: relative;
-	right: 0;
-	left: 0;
-	min-width: 600px;
-	width: auto;
-	padding: 5em 0em 7em 0em;
-	/* background: #FFF; */
-	background: #ffffff;
-	align-items: center;
-}
-
-/*********************************************************************************/
-
-/* Colunas Meio                                                                  */
-
-/*********************************************************************************/
-
-#colunasMeio {
-	text-align: center;
-	color: rgba(0, 0, 0, 0.6);
-}
-
-#colunasMeio .fa {
-	display: block;
-	padding: 1em 0em;
-	color: rgba(0, 0, 0, 1);
-	font-size: 2em;
-}
-
-#colunasMeio .title h2 {
-	font-weight: bold;
-	color: rgba(0, 0, 0, 0.8);
-}
-
-#colunasMeio .title .byline {
-	text-align: center;
-	color: rgba(0, 0, 0, .5);
-}
-
 /*********************************************************************************/
 
 /* Final                                                                         */
@@ -357,55 +300,6 @@ nav {
 
 #final a {
 	color: rgba(255, 255, 255, 1);
-}
-
-/*********************************************************************************/
-
-/* Ciruclo de Progresso                                                          */
-
-/*********************************************************************************/
-
-#circuloDeProgresso .porcentagem {
-	position: relative;
-	align-items: center;
-}
-
-#circuloDeProgresso .porcentagem strong {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -50px;
-	transform: translate(-50%);
-	font-size: 40px;
-	color: #ffffff;
-	font-weight: 100;
-}
-
-#circuloDeProgresso span {
-	display: block;
-	color: rgb(255, 255, 255);
-	font-size: 17px;
-	margin-top: 10px;
-}
-
-#circuloDeProgresso span i {
-	color: #ff5c5c;
-	font-size: 22px;
-	margin-right: 7px;
-}
-
-#circuloDeProgresso ul {
-	width: auto;
-	list-style: none;
-	display: inline-block;
-	justify-content: center;
-}
-
-#circuloDeProgresso li {
-	float: left;
-	margin-left: 5em;
-	padding: 0 0 0 1px;
-	margin-top: 5em;
 }
 
 /*********************************************************************************/
