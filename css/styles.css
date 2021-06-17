@@ -36,7 +36,8 @@ a {
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #111111;
+	background: #111111 url(/images/header-bg.jpg) no-repeat center scroll;
+	background-size: cover;
 	font-family: 'Didact Gothic', sans-serif;
 	font-size: 12pt;
 	font-weight: 200;
@@ -73,8 +74,6 @@ nav {
 #menuSuperior {
 	position: relative;
 	padding: 5em 0em 7em 0em;
-	background: #111111 url(/images/header-bg.jpg) no-repeat center;
-	background-size: cover;
 	min-width: 600px;
 	width: auto;
 }
@@ -169,14 +168,14 @@ nav {
 	text-align: center;
 }
 
-#menu .active a {
+#menu .btnCv a {
 	border: 3px solid rgb(189, 189, 189);
 	border-radius: 6px;
 	color: white;
 	text-shadow: 1px 1px 1px #000000;
 }
 
-#menu .active a:hover {
+#menu .btnCv a:hover {
 	border: 3px solid rgb(0, 0, 0);
 	border-radius: 6px;
 	color: rgb(14, 14, 14);
@@ -208,7 +207,7 @@ nav {
 	font-size: 4em;
 }
 
-#banner .title .byline {
+#banner .title .subtitulo {
 	font-size: 2em;
 }
 
@@ -240,7 +239,7 @@ nav {
 	font-size: 2.7em;
 }
 
-.title .byline {
+.title .subtitulo {
 	font-size: 1.3em;
 	color: rgba(255, 255, 255, 0.60);
 }
