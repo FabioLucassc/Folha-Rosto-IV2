@@ -13,24 +13,21 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-
 
     <title>Perfil - Fabio Lucas</title>
 
     <script src="https://kit.fontawesome.com/ea4423d99f.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
+
 </head>
 
 <body>
+    <script type="text/javascript" src="js/script.js"></script>
     <!-- -------------------------------- Barra Superior ------------------------------------ -->
     <div id="menuSuperior">
         <header>
 
             <nav>
-                <div id="menuEsquerdo">
+                <div id="home">
                     <ul>
                         <a href="">
                             <img src="icons/lampadaDev.png" alt="iconDev" width="7%" height="5%" id="logoMenu"
@@ -40,7 +37,7 @@
 
                     </ul>
                 </div>
-                <div id="menu">
+                <div id="DownloadCv">
                     <ul>
 
                         <li class="btnCv"><a href="cv/Curriculo - Fabio_Lucas.pdf" target="_blank"
@@ -70,12 +67,13 @@
 
         <div id="banner" class="container">
 
-            <div class="title">
+            <div class="descricao">
 
-                <h2>About me</h2>
-                <span class="subtitulo">Hello, welcome to my curriculum.</span>
+                <h2 id="titulo" onmouseover="mouseOverTitulo()" onmouseout="mouseOutTitulo()">About me</h2>
+                <span class="subtitulo" id="subtituloDesc" onmouseover="mouseOverSubtitulo()"
+                    onmouseout="mouseOutSubtitulo()">Hello, welcome to my curriculum.</span>
 
-                <p>
+                <p id="primeiroParagrafo" onmouseover="mouseOverIni()" onmouseout="mouseOutIni()">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Olá, me chamo Fabio Lucas, tenho 20 anos, atualmente estou cursando ciência da computação na
                     universidade UNIP-Jundiaí, onde ingressei no início de 2018 aos 17 anos,
@@ -85,21 +83,21 @@
                     gosto de conteúdo relacionado a motocicleta, de esportes, jogos online, gosto também de conteúdos
                     financeiros, ler alguns livros, e principalmente de tecnologia.
                 </p>
-                <p>
+                <p id="segundoParagrafo" onmouseover="mouseOverSeg()" onmouseout="mouseOutSeg()">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Hoje além de o meu trabalho estar relacionado a tecnologia também a tenho como um hobby,
                     pode-se dizer paixão. Junto a faculdade e esse hobby comecei a buscar conhecimentos de várias
                     linguagens de programação,
                     praticando, realizando trabalhos com a faculdade, assistindo curso de diversos portais etc.
                 </p>
-                <p>
+                <p id="terceiroParagrafo" onmouseover="mouseOverTer()" onmouseout="mouseOutTer()">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Sendo através dessa busca que comecei a me envolver com tecnologias como Java, C#, Python, HTML/CSS,
                     JS,
                     PHP, SQL Server, Dart/Flutter, sempre buscando entender e integrar essas tecnologias para montar
                     projetos.
                 </p>
-                <p>
+                <p id="quartoParagrafo" onmouseover="mouseOverQua()" onmouseout="mouseOutQua()">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     E minha motivação por estar realizando o curso é a busca de conhecimento na área de tecnologia,
                     principalmente na área de desenvolvimento web, e utilizar este conhecimento para resolver os
@@ -127,11 +125,14 @@
                 <p><br>Contato</p>
             </i></button>
         <div class="dropup-content">
+            <a href="https://www.facebook.com/fabio.lucas.351/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/flucas_sc/" target="_blank"><i class="fa fa-instagram"></i></a>
             <a href="https://api.whatsapp.com/send?phone=5511997716376&text=Ol%C3%A1,%20Eu%20tenho%20interesse%20em%20seu%20Curriculo"
                 target="_blank"><i class="fab fa-whatsapp"></i></a>
             <a href="https://www.linkedin.com/in/fabiolucas18/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="mailto:fabiolucassc@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
             <a href="https://github.com/FabioLucassc" target="_blank"><i class="fab fa-github"></i></a>
+
         </div>
     </div>
     <!--  --------------------------------------- Menu Contato --------------------------------------- -->
